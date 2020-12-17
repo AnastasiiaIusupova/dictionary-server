@@ -1,5 +1,9 @@
-FROM node:7.5-slim
+FROM node:12.4-alpine
 
-COPY index.js /index.js
+COPY ["./*", "/app/"]
 
-CMD node /index.js
+WORKDIR /app
+
+CMD [ "npm", "start" ]
+
+EXPOSE 8080
