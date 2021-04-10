@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "devDependencies": {
-    "jshint": "^2.6.0"
+    "mocha": "^8.3.2"
   },
   "scripts": {
     "start": "nodemon index.js",
-    "test": "jshint index.js"
+    "test": "mocha test.js"
   },
   "keywords": [],
   "author": "",
